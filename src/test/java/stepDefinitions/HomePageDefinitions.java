@@ -8,9 +8,9 @@ import stepDefinitions.utils.HelperClass;
 
 public class HomePageDefinitions {
 
-    @Given("User is on page {string}")
-    public void openUrl(String url) {
-        HelperClass.openPage(url);
+    @Given("User is on home page")
+    public void openHomePage() {
+        HelperClass.openPage(HelperClass.properties.getProperty("homePageUrl"));
     }
 
     @When("User verifies if login popup is available and closes it")

@@ -1,7 +1,7 @@
 Feature: Open Decathlon Website, search for item, add to cart and validate order summary
 
   Background: Open website and close login popup if available
-    Given User is on page "https://www.decathlon.in/"
+    Given User is on home page
     When User verifies if login popup is available and closes it
 
   @SmokeTest
